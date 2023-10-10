@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>Documentation | Secura</title>
+<meta name="description" content="Your ThemeForest item Name and description">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<!-- Here goes your Colors Css -->
+<link rel="stylesheet" type="text/css" href="assets/css/color-cyan.css" />
+</head>
+
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <h1 style="color: white;">Secura</h1>
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          
+        </div>
+        
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">UFW</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#ufw_installation">Install</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ufw_enable">Enable</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ufw_disable">Disable</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ufw_allowIP">Allow IP</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ufw_blockIP">Block IP</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ufw_allowPort">Allow Port</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#passwordpolicies">Password Policies</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pkgrem">Package Removal</a>
+        <li class="nav-item"><a class="nav-link" href="#usbstorage">Enable/Disable USB Storage</a></li>
+		    <li class="nav-item"><a class="nav-link" href="#tordis">TOR Service Disable</a></li>
+        
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+          </ul>
+		</li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>Secura App Documentation</h1>
+
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Install
+		============================ -->
+        <section id="ufw_installation">
+          <h2>UFW Installation</h2>
+          <p class="lead">Provides a simplified interface for managing IP tables, the default firewall management tool. With UFW, users can easily configure rules to allow or deny specific network traffic, safeguarding their system against unauthorized access and potential threats.</p>
+          
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Enable
+		============================ -->
+        <section id="ufw_enable">
+          <h2>Enabling UFW</h2>
+          <p class="lead">With UFW enabled, you can easily define policies to allow or deny specific network traffic, enhancing the security of your Ubuntu system against potential threats and unauthorized access</p>
+        </section>
+        
+		<hr class="divider">
+		        
+		<!-- Disable
+		============================ -->
+        <section id="ufw_disable">
+          <h2>UFW Disable</h2>
+          <p class="lead">Deactivates UFW, temporarily suspending its rule enforcement. Disabling the firewall may leave your system more vulnerable to potential threats, so exercise caution and consider re-enabling it when needed for enhanced security
+
+		  </p>
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Allow IP
+		============================ -->
+        <section id="ufw_allowIP">
+          <h2>Allowing IP Addresses using UFW</h2>
+          <p class="lead">To allow a specific IP address through the Uncomplicated Firewall (UFW) in Ubuntu for OS hardening, use the command 'sudo ufw allow from [IP address]' in the terminal. This grants access to the specified IP, adding an extra layer of security by controlling network traffic. This practice helps safeguard your system against potential threats while allowing trusted sources to communicate with your Ubuntu system</p>
+          
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- Block IP
+		============================ -->
+        <section id="ufw_blockIP">
+          <h2>Blocking IP Addresses using UFW</h2>
+          <p class="lead">To block an IP address using the Uncomplicated Firewall (UFW) for OS hardening in Ubuntu, execute the command 'sudo ufw deny from [IP_Address]' in the terminal. This prevents incoming connections from the specified IP, adding an extra layer of security to your system. Managing access in this way helps protect against potential threats and unauthorized access attempts</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Allow Port
+		============================ -->
+        <section id="ufw_allowPort">
+          <h2>Allow Port using UFW</h2>
+          <p class="lead">To allow a specific port using the Uncomplicated Firewall (UFW) for OS hardening in Ubuntu, use the command 'sudo ufw allow [port number]'. Replace '[port number]' with the actual port you want to open. This command configures UFW to permit incoming connections on that port, enhancing security by enabling necessary services while keeping other ports protected.</p>
+        </section>
+		
+        
+		<hr class="divider">
+		
+		<!-- Password Policies
+		============================ -->
+        <section id="passwordpolicies">
+          <h2>Password Policies</h2>
+          <p class="lead">Ubuntu password policies strengthen security by enforcing strong, periodically updated passwords with a mix of characters. They also implement lockout measures after failed attempts, thwarting potential breaches .
+
+            Only strong passwords are to be set by the users.</p>
+          <h5>Original Password Policy</h5>
+          <code>password	requisite			pam_pwquality.so retry=3</code>
+          <h5>Strengthened Password Policy</h5>
+          <code>password	requisite			password requisite pam_pwquality.so retry=3 minlen=8 maxrepeat=3 ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1 difok=3 gecoscheck=1 reject_username enforce_for_root</code>
+        </section>
+		
+		
+        <!-- Package Removal
+		============================ -->
+        <section id="pkgrem">
+          <h2>Package Removal</h2>
+          <p>Removing unnecessary packages is a crucial step in Ubuntu OS hardening. It involves identifying and uninstalling redundant software or services that may pose security risks or bloat the system. By reducing the attack surface and minimizing potential vulnerabilities.</p>
+        </section>
+		
+		<hr class="divider">
+
+
+        <!-- Enabling and disabling USB Storage 
+		============================ -->
+        <section id="usbstorage">
+          <h2>Enable/Disable USB Storage</h2>
+          <p class="lead">To enhance security in Ubuntu, you can disable or enable USB storage access. Disabling it restricts the use of external USB devices, adding an extra layer of defense against potential threats like malware or unauthorized data transfers. Conversely, enabling USB storage allows legitimate usage of external drives. This control over USB access is a valuable aspect of OS hardening, providing administrators with a means to manage and secure data flow within the system></p>
+        </section>
+		  
+      <hr class="divider">
+
+		  <!-- Disable Tor Service
+		  ============================ -->
+		  <section id="tordis">
+            <h2>Disable TOR Service</h2>
+			<p class="lead">To disable the TOR service in Ubuntu for OS hardening, run the command 'sudo systemctl disable tor' in the terminal. This stops TOR from starting automatically on system boot, reducing potential security risks associated with anonymous network connections. By disabling TOR, you can have more control over network traffic and strengthen the security of your Ubuntu system.</p>
+		         
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://github.com/SIH-GRIND" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2023 Team Grind. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Designed &amp; Developed by Chaitanya Vengali, Aaditya Kumar Muktavarapu, Siddarth Chalasani, Karthik Neriyanuri, Shriya Setru, Pranav Patnala</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
