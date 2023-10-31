@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-<link href="assets/images/favicon.png" rel="icon" />
-<title>Documentation | Secura</title>
+<!--link href="assets/images/favicon.png" rel="icon" / -->
+<title>Documentation | UBSecure</title>
 <meta name="description" content="Your ThemeForest item Name and description">
 <meta name="author" content="harnishdesign.net">
 
@@ -53,7 +53,7 @@
 		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
 		
 		<!-- Logo --> 
-        <h1 style="color: white;">Secura</h1>
+        <h1 style="color: white;">UBSecure</h1>
         <!-- Logo End -->
         
 		<!-- Navbar Toggler -->
@@ -87,6 +87,14 @@
             <li class="nav-item"><a class="nav-link" href="#ufw_allowPort">Allow Port</a></li>
           </ul>
         </li>
+        <li class="nav-item"><a class="nav-link" href="#ssh_changeport">SSH</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#ssh_changeport">Change Port Number</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ssh_root">Permit Root Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ssh_pwd">Password Authentication</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ssh_x11">X11 Forwarding</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="#passwordpolicies">Password Policies</a></li>
         <li class="nav-item"><a class="nav-link" href="#pkgrem">Package Removal</a>
         <li class="nav-item"><a class="nav-link" href="#usbstorage">Enable/Disable USB Storage</a></li>
@@ -108,7 +116,7 @@
         <!-- Getting Started
 		============================ -->
         <section id="idocs_start">
-        <h1>Secura App Documentation</h1>
+        <h1>UBSecure App Documentation</h1>
 
         </section>
         
@@ -170,6 +178,44 @@
           <p class="lead">To allow a specific port using the Uncomplicated Firewall (UFW) for OS hardening in Ubuntu, use the command 'sudo ufw allow [port number]'. Replace '[port number]' with the actual port you want to open. This command configures UFW to permit incoming connections on that port, enhancing security by enabling necessary services while keeping other ports protected.</p>
         </section>
 		
+        <hr class="divider">
+		
+        <!-- Change SSH Port
+		============================ -->
+        <section id="ssh_changeport">
+          <h2>Change SSH Port Number</h2>
+          <p class="lead">The ssh port is usually set to 22 so hackers usually target that port. We can change the port number to prevent hacks.</p>
+        </section>
+        
+		<hr class="divider">
+
+            <!-- Disable Root Login
+		============================ -->
+        <section id="ssh_root">
+          <h2>Permit Root Login for SSH</h2>
+          <p class="lead">The PermitRootLogin value (in /etc/ssh/sshd_config) allows for direct root login by a remote user/application to resources on the local host. By default, it is not possible for the root account to log directly into the system console because the account is configured as a role.</p>
+          <p class="lead">Use this group policy to specify whether and how root can log in using ssh. When you enable the policy, select one of the following options from the drop-down list: yes — Allow root to log in using ssh.</p>
+        </section>
+        
+		<hr class="divider">
+
+                <!-- SSH Password Authentication
+		============================ -->
+        <section id="ssh_pwd">
+          <h2>SSH Password Authentication</h2>
+          <p class="lead">In password-based authentication, after establishing secure connection with remote servers, SSH users usually pass on their usernames and passwords to remote servers for client authentication. These credentials are shared through the secure tunnel established by symmetric encryption.</p>
+          <p class='lead'>Password Authentication for OpenSSH Server on Ubuntu is enabled by default, so it's possible to login without changing any settings. Furthermore, root account is prohibited Password Authentication by default with [PermitRootLogin prohibit-password], so default setting is good for use. But if you prohibit root login all, change like follows.</p>
+        </section>
+        
+		<hr class="divider">
+
+                    <!-- SSH X11 Forwarding
+		============================ -->
+        <section id="ssh_x11">
+          <h2>X11 Forwarding</h2>
+          <p class="lead">X11 forwarding, ssh -X, is an SSH protocol that enables users to run graphical applications on a remote server and interact with them using their local display and I/O devices. It is commonly relied upon by developers for securely interacting with remote machines across wide and heterogeneous server fleets.</p>
+      
+        </section>
         
 		<hr class="divider">
 		
